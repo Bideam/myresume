@@ -1,42 +1,241 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Myresume by Bideam</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Myresume</h1>
-      <h2 class="project-tagline">this is my resume</h2>
-      <a href="https://github.com/Bideam/myresume" class="btn">View on GitHub</a>
-      <a href="https://github.com/Bideam/myresume/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Bideam/myresume/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
+<head>
+	<title>个人简历</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.5.0/css/font-awesome.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/fund.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="banner">
+			<div class="subbanner">
+				<h1>MY RESUME</h1>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content-left">
+				<img src="images/picture.png">
+			</div>
+			<div class="content-right">
+				<h1>罗聪</h1>
+				<div class="border"></div>
+				<h2>前端开发</h2>
+				<a href="myresume.pdf">DOWNLOAD MY RESUME(PDF)</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="kinds">
+			<ul>
+				<li><div class="circle">
+					<div class="fa fa-flask fa-5x "></div>
+					<div class="show-1 showpage" id="show1"></div>
+				</div></li>
+				<li><div class="circle">
+                	<div class="fa fa-graduation-cap fa-5x "</div>
+                	<div class="show-2 showpage" id="show2"><span></span></div>
+                </div></li>
+				<li><div class="circle">
+                	<div class="fa fa-comments fa-5x "</div>
+                	<div class="show-3 showpage" id="show3"></div>
+                </div></li>
+				<li><div class="circle">
+                	<div class="fa fa-github-square fa-5x "></div>
+                	<div class="show-4 showpage" id="show4"></div>
+                </div></li>
+			</ul>
+		</div>
+		<div class="detail">
+			
+			<div class="page" id="page1">
+				<span class="fa fa-compress fa-3x close"></span>
+				<span class="fa fa-step-backward fa-3x prev"></span>
+				<span class="fa fa-step-forward fa-3x next"></span>
+				<div>
+					<h1>技能掌握</h1>
+				</div>
+				<hr>
+				<div id="skillmain" ></div>
+			</div>
+			<div class="page" id="page2">
+				<span class="fa fa-compress fa-3x close"></span>
+				<span class="fa fa-step-backward fa-3x prev"></span>
+				<span class="fa fa-step-forward fa-3x next"></span>
+				<div>
+					
+					<h1>毕业院校</h1>
+				</div>
+				<hr>
+				<div>
+					<img src="images/th.png" style="width: 300px; height: 300px;">
+					<div class="school">
+						<p>中国民航大学</p>
+						<p>交通运输专业</p>
+						<p>2013.09~至今</p>
+					</div>
+				</div>
+            </div>
+			<div class="page" id="page3">
+				<span class="fa fa-compress fa-3x close"></span>
+				<span class="fa fa-step-backward fa-3x prev"></span>
+				<span class="fa fa-step-forward fa-3x next"></span>
+				<div id="phone">
+					<img src="images/phone.png">
+					<div>电话号码：13821879791</div>
+				</div>
+				<div id="email">
+					<img src="images/email.png">
+					<div>邮箱：bideamluo@gmail.com</div>
+				</div>
+				<div id="github">
+					<img src="images/github.png">
+					<div>https://github.com/Bideam</div>
+				</div>
+				<div class="row">
+					<h1>联系方式</h1>
+				</div>
+			</div>
+			<div class="page" id="page4">
+				<span class=" close"></span>
+				<span class=" prev"></span>
+				<span class=" next"></span>
+				<div class="section"> 
+					<div class="pro_left">
+						<div id="plugin" class="pro_click">
+							<div class="box_with_padding">
+								<h2>
+									<a href="#">Chrome插件</a>
+								</h2>
+								一款chrome插件
+							</div>
+						</div>
+						<div id="web" class="pro_click">
+							<div class="box_with_padding">
+								<h2>
+									<a href="#">网站</a>
+								</h2>
+								一个关注名人的网站
+								
+							</div>
+						</div>
+						<div id="spider" class="pro_click">
+							<div class="box_with_padding">
+								<h2>
+									<a href="#">爬虫</a>
+								</h2>
+								爬取网站最新视频
+							</div>
+						</div>
+						<div id="blog" class="pro_click">
+							<div class="box_with_padding">
+								<h2>
+									<a href="#">博客</a>
+								</h2>
+								用nodeJS搭建的博客后台
+							</div>
+						</div>
+					</div>
+					<div class="pro_right">
+						<div id="pugi" class="pugi">
+							<div class="titlebanner">
+								<div class="box_with_padding">
+									<h2>获取照片EXIF信息</h2>
+								</div>
+							</div>
+							<hr>
+							<p>这是一个用来获取网页上照片的chrome浏览器插件。当安装好插件后可以通过鼠标点击图片获得图片的EXIF信息，前提是图片本身具有EXIF信息，如果没有那么插件也无法获得图片的相应的信息</p>
+							<p>本插件使用exif.js来获取图片的exif，安装之后通过使用鼠标点击网页中的图片以选中目标，并将数据传到后台处理程序，再次点击插件图标将会弹出图片的exif信息</p>
+							<a href="https://github.com/Bideam/getexif">查看代码</a>
+						</div>
+						<div id="webi" class="pugi donplay">
+							<div class="titlebanner">
+								<div class="box_with_padding">
+									<h2>名人关注网站</h2>
+								</div>
+							</div>
+							<hr>
+							<p>此网站着力于关注各个领域颇有建树的名人，传播他们的光荣事迹，精彩人生，将他（她）们的故事分析给每一个浏览这个网站的人</p>
+							<p>此网站使用Ajax和Access数据库用于页面数据交互；使用HTML5和CSS3进行页面布局；使用原生JavaScript实现动态操作；使用ASP返回服务器数据，通过更新时间和人气进行人物排序</p>
+							<a href="https://github.com/Bideam/focusonpeople">查看代码</a>
+						</div>
+						<div id="spider" class="pugi donplay">
+							<div class="titlebanner">
+								<div class="box_with_padding">
+									<h2>爬虫程序基于nodeJS</h2>
+								</div>
+							</div>
+							<hr>
+							<p>使用nodeJS框架编写的一个爬虫程序，用于爬取Acfun，优酷和土豆视频网站的最新视频数据，不同的网站爬取的数据内容不同</p>
+							<p>NodeJS的异步和非阻塞运行机制十分有利于大量数据的处理，对资源占用小，因此用此写一个网络爬虫程序</p>
+							<a href="https://github.com/Bideam/spider">查看代码</a>
+						</div>
+						<div id="blogi" class="pugi donplay">
+							<div class="titlebanner">
+								<div class="box_with_padding">
+									<h2>nodeJS搭建博客后台</h2>
+								</div>
+							</div>
+							<hr>
+							<p>使用nodeJS框架搭建的一个博客后台管理程序，可以实现登录，注册，注销，发布文章，上传图片，评论等功能，由于专注于修改程序bug，暂未进行网页设计</p>
+							<p>该程序使用MongoDB数据库存储数据，引入大量第三方模块，对于node.js的学习和理解作用显著，使用Express模块快速搭建服务端，配合MongoDB数据库的对数据存储的灵活性和便捷性用于管理博客后台搓搓有余</p>
+							<a href="https://github.com/Bideam/blog">查看代码</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var myChart=echarts.init(document.getElementById('skillmain'));
 
-    <section class="main-content">
-      <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Bideam/myresume">Myresume</a> is maintained by <a href="https://github.com/Bideam">Bideam</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+    var option = {
+	    title: {
+	        text: ''
+	    },
+	    legend: {
+	        data: ['罗聪']
+	    },
+	    radar: [
+	        {},
+	        {
+	            indicator: [
+	                { text: 'JavaScript', max: 100 },
+	                { text: 'HTML/CSS', max: 100 },
+	                { text: 'NodeJS', max: 100 },
+	                { text: 'AngularJS', max: 100 },
+	                { text: 'jQuery', max: 100 },
+	                { text: 'Ajax', max: 100 }
+	            ],
+	            center: ['75%', '50%'],
+	            radius: 120
+	        }
+	    ],
+	    series: [
+	        {
+	            name: '成绩',
+	            type: 'radar',
+	            radarIndex: 1,
+	            data: [
+	                {
+	                    value: [80, 80, 60, 55, 80, 70],
+	                    name: '张三',
+	                    label: {
+	                        normal: {
+	                            show: true,
+	                            formatter:function(params) {
+	                                return params.value;
+	                            }
+	                        }
+	                    }
+	                }
+	            ]
+	        }
+	    ]
+	}
+	myChart.setOption(option);
+</script>
 </html>
