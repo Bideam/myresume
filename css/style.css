@@ -1,0 +1,418 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	background: url(../images/banner.jpg) no-repeat 0px 0px;
+}
+
+.main{
+	width: 800px;
+	margin: 0 auto;
+	height: 100%;
+
+}
+
+.subbanner{
+	padding-top:25px ;
+	padding-bottom: 20px;
+}
+.subbanner h1{
+	font-size: 34px;
+	font-weight: 800;
+	color: #fff;
+	letter-spacing: 15px;
+
+}
+
+.content{
+	width: 65%;
+	margin: 14px auto 0 auto;
+}
+
+.content-right h1{
+	font-size: 34px;
+	font-weight: 800;
+	color: #fff;
+	margin: 35px 0 15px 0;
+	letter-spacing: 70px;
+}
+
+.content-right h2{
+	font-size: 34px;
+	font-weight: 300px;
+	color: #fff;
+	margin: 15px 0 45px 0;
+}
+
+.content-right a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 16px 20px;
+	border:2px solid #fff;
+}
+
+.content-left{
+	float: left;
+}
+
+.content-right{
+	float: right;
+}
+
+.border{
+	background:#52edc7;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1px;
+}
+
+.kinds{
+	width: 100%;
+	height: 100px;
+	margin-top: 300px;
+}
+
+.kinds ul li{
+	float: left;
+	list-style: none;
+	width : 25%;
+	height: 100px;
+}
+
+.circle{
+	width: 100px;
+	height: inherit;
+	border-radius: 50px;
+	background: #85E4B8;
+	text-align: center;
+	line-height: inherit;
+	vertical-align: middle;
+	position: relative;
+}
+
+.circle *,.circle *:before,.circle *:after{
+	-webkit-transition: 0.5s;
+ 	transition: 0.5s;
+}
+
+.fa{
+	margin-top: 15px;
+	
+}
+
+.show-1,.show-2,.show-3,.show-4{
+	width: 100px;
+	float: left;
+	height: 100px;
+	opacity:1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color:#fff;
+	border-radius: 50px;
+
+}
+[class^='show-']:before,[class^='show-'],[class^='show-']:after,[class^='show-'] *:before,[class^='show-'] *:after{
+	font-size: 36px;
+	font-weight: 300;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: middle;
+	top: 0;
+	left: 0;
+	color: #fff;
+	opacity: 1;
+	content: '';
+	border-radius: 50px;
+	position: absolute;	
+}
+
+.show-1:before{
+	height: 100px;
+	width: 0;
+	background: #541272;
+
+}
+
+.show-1:hover:before{
+	content: '技能';
+	width: 100px;
+	background: #4082B2;
+}
+
+.show-2:before,.show-2:after,.show-2 span:before,.show-2 span:after{
+	width: 100px;
+	height: 0px;
+	background: #60BBA6;
+	-webkit-transition: 0.4s;
+ 	transition: 0.4s;
+}
+
+.show-2:after,.show-2 span:before{
+	top: auto;
+	bottom: 0;
+}
+.show-2 span:before,.show-2 span:after{
+	-webkit-transition: 0.4s;
+  	transition: 0.4s;
+}
+
+.show-2:hover:before,.show-2:hover:after,.show-2:hover span:before,.show-2:hover span:after{
+	height: 100px;
+	content: '教育';
+}
+
+.show-3{
+	color: #377660;
+}
+.show-3:before{
+	width: 0;
+	height: 0;
+	top: 0%;
+	left: 0%;
+	background:#C39247;
+}
+
+.show-3:hover:before{
+	height: 100px;
+	width: 100px;
+	left: 0;
+	top: 0;
+}
+
+.show-3:hover:before{
+	content: '联系';
+}
+
+.show-4:before{
+	width: 100px;
+	height: 100px;
+	-webkit-transform:scale(0);
+	transform: :scale(0);
+	background: #747474;
+}
+
+.show-4:hover:before{
+	content: '项目';
+	transform: scale(1);
+	-webkit-transform:scale(1);
+}
+
+#page1,#page2,#page3,#page4{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transition: 0.5s;
+ 	transition: 0.5s;
+
+	width: 800px;
+	height: 480px;
+	margin-top: -200px;
+	margin-left: -400px;
+	-webkit-transform:scale(0);
+	transform: scale(0);
+	-moz-transform:scale(0);
+}
+
+#page1{
+	background: #4082B2;
+}
+#page2{
+	background: #60BBA6;
+}
+#page3{
+	background: #C39247;
+}
+#page4{
+	background: #150242;
+}
+.row{
+	float: right;
+	width: 28px;
+	color: #fff;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: 700px;
+	padding-top: 150px;
+	padding-left: 20px;
+	text-align: center;
+
+}
+#page2 p,#page2 h1,#page1 h1{
+	color: #fff;
+	padding-left:30px; 
+}
+#page2 img{
+	margin-left: 30px;
+}
+.school{
+	float: right;
+	width: 400px;
+	font-size: 28px;
+	margin-top: 50px;
+}
+.close{
+	position: absolute;
+	top: 10px;
+	left: 730px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.prev{
+	position: absolute;
+	top: 400px;
+	left: 70px;
+	cursor: pointer;
+	z-index: 999;
+}
+#page4 .close{
+	width:36px;
+	height: 43px;
+}
+
+#page4 .prev,#page4 .next{
+	width: 24px;
+	height: 43px;
+}
+.next{
+	position: absolute;
+	top: 400px;
+	left: 730px;
+	cursor: pointer;
+	z-index: 999;
+}
+#skillmain{
+	height: 380px;
+	width:700px; 
+	margin-left: -100px;
+	color: #fff;
+}
+
+#phone,#github,#email{
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	overflow: hidden;
+	background: #fff;
+	line-height: 100px;
+	vertical-align: middle;
+	transition: 0.5s;
+	-webkit-transition:0.5s;
+
+}
+#phone:hover,#github:hover,#email:hover{
+	width: 600px;
+	background: rgb(99, 197, 99);
+}
+
+#page3 div img{
+	width: 100px;
+	height: 100px;
+}
+#page3 div div{
+	display: block;
+	height: 100px;
+	float: right;
+	font-size: 36px;
+	color: #fff;
+	line-height: 100px;
+	vertical-align: middle;
+	margin-right: 30px;
+
+}
+
+.section{
+	position: relative;
+	float: left;
+	width: 800px;
+	height: 480px;
+	background: #3c3b3b;
+}
+.pro_left{
+	width: 400px;
+	height: 480px;
+	float: left;
+}
+
+#plugin{
+	background: #9168b3 url(../images/tem_01.png) scroll 20px 25px no-repeat;
+	width: 400px;
+	height: 120px;
+
+}
+
+.box_with_padding{
+	padding: 25px 15px 15px 140px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.box_with_padding h2{
+	color: #fff;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+a, a:link,a:visited{
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+#web{
+	background: #a8b368 url(../images/tem_02.png) scroll 20px 25px no-repeat;
+	width: 400px;
+	height: 120px;
+}
+
+#spider{
+	background:  #b36c68 url(../images/tem_03.png) scroll 20px 25px no-repeat;
+	width: 400px;
+	height: 120px;
+}
+#blog{
+	background: #636363 url(../images/tem_04.png) scroll 20px 25px no-repeat;
+	width: 400px;
+	height: 120px;
+}
+.pro_right{
+	width: 400px;
+	height: 480px;
+	float: right;
+}
+.titlebanner{
+	background: #413959 scroll 20px 25px;
+	width: 400px;
+	height: 120px;
+}
+.donplay{
+	display: none;
+}
+
+.pugi{
+	width: 400px;
+	height: 480px;
+}
+
+.pugi p{
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding: 5px;
+	text-indent: 2em;
+}
+
+.pugi a{
+	border: 1px solid currentColor;
+	border-radius: 2px;
+	position: absolute;
+	top: 450px;
+	left: 700px;
+	color: #fff;
+}
